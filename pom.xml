@@ -6,9 +6,7 @@
   <artifactId>adanac-parent</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
-
   <name>adanac-parent</name>
-  <url>http://maven.apache.org</url>
 
 
   <properties>
