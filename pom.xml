@@ -76,6 +76,9 @@
 		<maven_deploy_plugin_version>2.7</maven_deploy_plugin_version>
 
         <maven-surefire-plugin_version>2.17</maven-surefire-plugin_version>
+        
+        <!-- third utils -->
+        <commons_dbutils_version>1.6</commons_dbutils_version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -529,6 +532,13 @@
                 <version>2.0</version>
                 <scope>provided</scope>
             </dependency>
+            
+            <!-- third utils -->
+            <dependency>
+			  <groupId>org.apache</groupId>
+			  <artifactId>commons-dbutils</artifactId>
+			  <version>${commons_dbutils_version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>	
 
@@ -733,14 +743,14 @@
 	</scm>
 	<distributionManagement>
  		<repository>
-			<id>nexus-releases</id>
-			<name>bn Release Repository</name>
-			<url>http://192.168.1.31:8081/nexus/content/repositories/releases/</url>
+			<id>adanac-nexus-releases</id>
+			<name>adanac Release Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus-snapshots</id>
-			<name>bn Snapshot Repository</name>
-			<url>http://192.168.1.31:8081/nexus/content/repositories/snapshots/</url>
+			<id>adanac-nexus-snapshots</id>
+			<name>adanac Snapshot Repository</name>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
      </distributionManagement>
 </project>
