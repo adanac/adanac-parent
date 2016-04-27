@@ -77,8 +77,15 @@
 
         <maven-surefire-plugin_version>2.17</maven-surefire-plugin_version>
         
-        <!-- third utils -->
+        <!-- third utils begin-->
         <commons_dbutils_version>1.6</commons_dbutils_version>
+        <!-- java mail -->
+        <jna_version>3.0.9</jna_version>
+        <jna_examples_version>3.0.9</jna_examples_version>
+        <activation_version>1.1</activation_version>
+        <mail_api_version>1.5.2</mail_api_version>
+        <mail_version>1.5.2</mail_version>
+        <!-- third utils end-->
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -539,6 +546,31 @@
 			  <artifactId>commons-dbutils</artifactId>
 			  <version>${commons_dbutils_version}</version>
 			</dependency>
+			<dependency>
+			  <groupId>com.sun</groupId>
+			  <artifactId>jna</artifactId>
+			  <version>${jna_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>com.sun</groupId>
+			  <artifactId>jna-examples</artifactId>
+			  <version>${jna_examples_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>javax.activation</groupId>
+			  <artifactId>activation</artifactId>
+			  <version>${activation_version}</version>
+			</dependency>
+			<dependency>
+			  <groupId>javax.mail</groupId>
+			  <artifactId>javax.mail-api</artifactId>
+			  <version>${mail_api_version}</version>
+			</dependency>
+			<dependency>
+		      <groupId>com.sun.mail</groupId>
+		      <artifactId>javax.mail</artifactId>
+		      <version>${mail_version}</version>
+		    </dependency>
 		</dependencies>
 	</dependencyManagement>	
 
