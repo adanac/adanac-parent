@@ -101,7 +101,8 @@
 		<freemarker>2.3.22</freemarker>
 		<flying-saucer>9.0.3</flying-saucer>
 		<json-lib>2.4</json-lib>
-		
+		<commons-httpclient>3.1</commons-httpclient>
+		<htmlparser>2.1</htmlparser>
         <!-- third utils end-->
 	</properties>
 	<dependencyManagement>
@@ -663,7 +664,18 @@
 				<version>${json-lib}</version>
 				<classifier>jdk15</classifier>
 			</dependency>
-		
+			<!--  commons-httpclient -->
+			<dependency>
+			  <groupId>commons-httpclient</groupId>
+			  <artifactId>commons-httpclient</artifactId>
+			  <version>${commons-httpclient}</version>
+			</dependency>
+			<!-- htmlparser -->
+			<dependency>
+			    <groupId>org.htmlparser</groupId>
+			    <artifactId>htmlparser</artifactId>
+			    <version>${htmlparser}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>	
 
