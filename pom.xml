@@ -708,9 +708,7 @@
 						<source>${java_source_version}</source>
 						<target>${java_target_version}</target>
 						<encoding>${file_encoding}</encoding>
-                        <compilerArgs>
-                            <arg>-XX:MaxPermSize=512M</arg>
-                        </compilerArgs>
+
 					</configuration>
 				</plugin>
 				<plugin>
@@ -867,8 +865,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
 				<configuration>
+					<!-- not allowed in idea
 					<encoding>utf-8</encoding>
 					<outputEncoding>utf-8</outputEncoding>
+					-->
 				</configuration>				
 				<executions>
 					<execution>
