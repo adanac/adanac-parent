@@ -148,11 +148,13 @@
 				<artifactId>javassist</artifactId>
 				<version>${javassist_version}</version>
 			</dependency>
+<!-- 
 			 <dependency>
                 <groupId>javax.persistence</groupId>
                 <artifactId>persistence-api</artifactId>
                 <version>${javax_persistence}</version>
             </dependency>
+ -->
 			<dependency>
 				<groupId>io.netty</groupId>
 				<artifactId>netty</artifactId>
@@ -372,24 +374,15 @@
               </dependency>
             
             
-            <dependency>
-                <groupId>org.codehaus.jackson</groupId>
-                <artifactId>jackson-mapper-asl</artifactId>
-                <version>1.9.5</version>
-            </dependency>
-            <dependency>
-				<groupId>org.codehaus.jackson</groupId>
-				<artifactId>jackson-core-asl</artifactId>
-				<version>1.9.5</version>
-			</dependency>
+            
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.3</version>
+                <version>1.2.7</version>
             </dependency>
-           
             <!--end  json   -->
-                        <!-- commons utils -->
+      		
+      		<!-- commons utils -->
               <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
@@ -555,11 +548,13 @@
                 <version>2.40</version>
             </dependency>
             
+<!--  
             <dependency>
 				<groupId>net.sourceforge</groupId>
 				<artifactId>pinyin4j</artifactId>
 				<version>${pinyin4j}</version>
 			</dependency>
+-->
 			<dependency>
                 <groupId>net.sf.ehcache</groupId>
                 <artifactId>ehcache</artifactId>
@@ -659,12 +654,12 @@
 				<artifactId>gson</artifactId>
 				<version>${gson}</version>
 			</dependency>
-			<!-- json -->
+			<!-- json-lib -->
 			<dependency>
-				<groupId>net.sf.json-lib</groupId>
-				<artifactId>json-lib</artifactId>
-				<version>${json-lib}</version>
-				<classifier>jdk15</classifier>
+			    <groupId>net.sf.json-lib</groupId>
+			    <artifactId>json-lib</artifactId>
+			    <version>${json-lib}</version>
+			    <classifier>jdk15</classifier>
 			</dependency>
 			<!--  commons-httpclient -->
 			<dependency>
@@ -682,6 +677,26 @@
 				<groupId>org.quartz-scheduler</groupId>
 				<artifactId>quartz</artifactId>
 				<version>${quartz}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>1.9.5</version>
+			</dependency>
+			<dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>1.9.5</version>
+            </dependency>
+            <dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-core-asl</artifactId>
+				<version>1.9.5</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>	
